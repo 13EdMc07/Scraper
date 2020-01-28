@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Scraping With Mongoose</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- Compiled and minified JavaScript for materialize library/framework -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  </head>
+  <body>
+
+      <nav>
+        <div id="navbar" class="nav-wrapper">
+          <a href="#" class="brand-logo" style="margin-left: 20px;">PolyScrape</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a id="home">Home</a></li>
+            <li><a id="faves">Saved Articles</a></li>
+            <li><a id="scrape-btn" class="btn">Refresh Scraped Articles</a></li>
+            <li><a id="clear-scrape" class="btn">Clear Scraped Articles</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="container-fluid" id="wrapper">
+        <div class="row">
+            <div class="container col 12">
+                <h1 class="center">Mongo Scraper</h1>
+                <h4 class="center"><i>Polygon Edition</i></h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results -->
+    <div id="results" class="container-fluid">
+      <div class="row">
+        <div class="col 12"  style="width: 100%;">
+            <div id="articles">
+              <!-- Articles Appear Here -->
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Saved -->
+    <div id="saved" class="container-fluid">
+      <div class="row">
+        <div class="col 12">
+          <h3>Favorites:</h3>
+          <hr>
+            <div id="favorites">
+              <!-- Favorites Appear Here -->
+            </div>
+            <div id="notes"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
